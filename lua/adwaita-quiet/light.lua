@@ -1,4 +1,4 @@
-local u = require('adwaita.utils')
+local u = require('adwaita-quiet.utils')
 
 local hl = u.highlight
 
@@ -33,7 +33,7 @@ M.set = function()
     hl('FloatBorder', { fg = colors.dark_3, bg = colors.light_3 })
     hl('ColorColumn', { bg = colors.light_3 })
     hl('Cursor', { fg = colors.light_5, bg = colors.dark_2 })
-    hl('CursorLine', { bg = vim.g.adwaita_disable_cursorline and 'none' or colors.light_4 })
+    hl('CursorLine', { bg = vim.g.adwaita_quiet_disable_cursorline and 'none' or colors.light_4 })
     hl('CursorColumn', { bg = colors.light_4 })
     hl('Directory', { fg = colors.dark_4, bold = true })
     hl('DiffAdd', { fg = colors.teal_3, bg = colors.light_2 })

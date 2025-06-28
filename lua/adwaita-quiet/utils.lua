@@ -148,14 +148,14 @@ M.gen_colors = function()
             yellow_6    = "#D38B09",
         }
     end
-    if vim.g.adwaita_darker then
+    if vim.g.adwaita_quiet_darker then
         colors.libadwaita_dark     = "#000000"
         colors.libadwaita_dark_alt = "#1c1c1c"
         colors.libadwaita_tree     = "#101010"
         colors.split_and_borders   = "#1e1e1e"
     end
 
-    if vim.g.adwaita_transparent then
+    if vim.g.adwaita_quiet_transparent then
         colors.libadwaita_dark = 'none'
     end
 

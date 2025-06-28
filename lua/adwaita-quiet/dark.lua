@@ -1,4 +1,4 @@
-local u = require('adwaita.utils')
+local u = require('adwaita-quiet.utils')
 local colors = u.gen_colors()
 
 local hl = u.highlight
@@ -53,7 +53,7 @@ M.set = function()
     hl('LineNr', { fg = colors.dark_2, bg = colors.libadwaita_dark })
     hl('CursorLineNr', {
         fg = colors.light_7,
-        bg = vim.g.adwaita_disable_cursorline and 'NONE' or colors.libadwaita_dark_alt,
+        bg = vim.g.adwaita_quiet_disable_cursorline and 'NONE' or colors.libadwaita_dark_alt,
     })
     hl('MatchParen', { fg = colors.light_4, bold = true })
     hl('ModeMsg', { fg = colors.light_4, bg = colors.libadwaita_dark_alt })
